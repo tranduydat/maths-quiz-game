@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths Quiz by Tran Duy Dat (HE140517)</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./scripts.js"></script>
+  </head>
+  <body onload="run();">
+    <main id="root">
+      <div class="container">
+        <div class="title">
+          <h1>Maths Quiz</h1>
+        </div>
+        <div class="status">
+          <div class="status__score">
+            Score: <span id="status-score">0</span>
+          </div>
+          <div class="status__level">
+            Level: <span id="status-level">1</span>
+          </div>
+        </div>
+        <div id="progress-bar" class="progress-bar" style="width: 100%"></div>
+        <div id="question" class="question">4 - 4</div>
+        <div id="hypothesis" class="hypothesis">0</div>
+        <div class="user-answer">
+          <button id="btn-answer-true" class="btn-answer-true" value="true">
+            <img src="./img/true.svg" alt="Answer: True" />
+          </button>
+          <button id="btn-answer-false" class="btn-answer-false" value="false">
+            <img src="./img/false.svg" alt="Answer: False" />
+          </button>
+        </div>
+      </div>
+      <div id="gameover-screen" class="gameover-overlay">
+        <h2>Game Over</h2>
+        <button id="btn-play-game">Play Game</button>
+      </div>
+    </main>
+  </body>
+</html>
