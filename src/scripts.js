@@ -84,6 +84,7 @@ class GameSession {
   #initUI() {
     this.#updateProgressBarUIBySecond(0, this.sessionDurationSecond);
     this.#updateGameOverScreenUI(false);
+    this.#updateStatusUI(0, 1);
   }
 
   #updateProgressBarUIBySecond(second, totalSecond) {
