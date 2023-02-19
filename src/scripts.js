@@ -209,7 +209,5 @@ class GameSession {
   }
 }
 
-function run() {
-  const game = new GameSession();
-  game.run();
-}
+const game = new GameSession();
+game.run();
